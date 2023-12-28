@@ -1,0 +1,23 @@
+.add__new {
+    text-align: right;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 0 5px 0;
+    margin: 20px 0 0 600px;
+}
+
+.add__new-button {
+    padding: 5px;
+    user-select: none;
+    font-weight: 700;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.add__new-button:hover {
+    background-color: rgba(255,255,255);
+}
+
+.add__new-button:active {
+    background-color: rgba(255,255,255, 0.87);
+}

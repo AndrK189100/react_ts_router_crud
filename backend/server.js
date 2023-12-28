@@ -16,7 +16,7 @@ app.use(function (req, res, next) {
   res.setHeader("Content-Type", "application/json");
   next();
 });
-
+//{id: 1000, content: 'asd;lfkjasd', created: '17.12.2023 14:00:00'}, {id: 1001, content: 'lalalal', created: '17.12.2023 21:00:00'}
 let posts = [];
 let nextId = 1;
 
@@ -36,7 +36,7 @@ app.post("/posts", (req, res) => {
   res.end();
 });
 
-app.put("/posts/:id", (req, res) => {
+app.patch("/posts/:id", (req, res) => {
   const postId = Number(req.params.id);
   posts = posts.map((o) => {
     if (o.id === postId) {
